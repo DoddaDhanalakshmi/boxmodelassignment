@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div{
+        background-color: orange;
+        height:500px;
+        width:500px;
+        margin-left: 200px;
+        margin-top: 50px;
+        z-index:90;
+        position:relative;
+        
+
+    }
+    .ki{
+        /* background-color:green; */
+        border-radius: 50%;
+        height:100px;
+        width:100px;
+        position:relative;
+        z-index:5;
+        top:40%;
+        left:2%;
+       
+    }
+     .ki .lo{
+        background-color: yellow;
+        border-radius: 50%;
+       
+        height:120px;
+        width:120px;
+        position:absolute;
+        z-index:20;
+        /* bottom:9%; */
+        left:-200%;
+        top:-20%;
+     
+        animation:rotate 1s ease infinite alternate 2s;
+    }
+    @keyframes rotate{
+        0%{
+           box-shadow:30px 10px gold;
+
+        }
+        100%{
+            box-shadow:0 -15px 10px 10px transparent;
+          
+        }
+    }
+
+    </style>
+
+</head>
+<body>
+    <div >
+
+          <div class="ki">
+            <div class="lo">
+
+            </div>
+
+          </div>
+    </div>
+</body>
+</html>

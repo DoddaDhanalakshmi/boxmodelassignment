@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            height:100vh;
+            grid-template-columns: repeat(5,1fr);
+            gap:20px;
+        }
+        .Header{
+            background-color: greenyellow;
+            grid-column: 1/6;
+            /* grid-row:1/2; */
+        }
+        .ads{
+            background-color: greenyellow;
+            grid-column:1/2;
+            grid-row:2/3;
+            
+        }
+        .Article{
+            background-color: greenyellow;
+            grid-column: 2/6;
+            grid-row:2/5;
+        }
+        .nav{
+            background-color:greenyellow;
+        
+            grid-row:3/6;
+        }
+        .Footer{
+            background-color: greenyellow;
+            grid-column:2/6
+        }
+        @media  screen and (min-width:320px) and (max-width:425px) {
+            .header{
+                grid-column:1/6;
+            }
+            .footer{
+                grid-column:1/6;
+
+            }
+            .ads{
+                grid-row:2/5;
+                grid-column:1/4;
+            }
+            .Article{
+                grid-column:4/6;
+                grid-row:2/4;
+
+
+            }
+            .nav{
+                grid-column:4/6;
+                grid-row:4/5;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="Header">Header</div>
+        <div class="ads">Ads</div>
+        <div class="Article">Article</div>
+        <div class="nav">Nav</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>

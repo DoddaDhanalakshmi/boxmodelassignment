@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aqua;
+            height:300px;
+            width:300px;
+            border:3px solid red;
+            /* transition-duration: 7s;
+             transition-delay: 5s; */
+            /* transition-timing-function:steps(5);  */
+            transition:all 2s steps(5) 5s;
+            
+
+        }
+        div:hover{
+            background:burlywood;
+            height:700px;
+            width:700px;
+            border:3px dashed palegreen;
+            color:blue
+        
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <p>this is transition</p>
+    </div>
+</body>
+</html>

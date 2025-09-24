@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: burlywood;
+            border-radius: 20px;
+            height:200px;
+            width:200px;
+            z-index: 2px;
+            position: relative;
+            
+
+
+        }
+        .ki{
+            height:30px;
+            width:30px;
+            border:8px dashed red;
+            border-radius: 50%;
+           animation:rotate 3s linear infinite ;
+           z-index: 10;
+           position:absolute;
+           top:90%;
+           left:150%;
+
+
+        }
+        @keyframes rotate{
+            0%{
+                transform:rotate(0deg);
+            }
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+          <img src="https://images.indianexpress.com/2023/07/Screenshot-from-Rajinikanths-Jailer.jpg?w=640" alt="">
+          <div class="ki">
+          </div>
+    </div>
+</body>
+</html>

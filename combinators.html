@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .don > h1+h2{
+            color:blueviolet
+        }
+        .don  h2{
+            background-color: brown;
+        }
+         .don h2~.child>h2{
+            color: chartreuse;
+         }
+         .child>h2+.child2>h4{
+            color:chocolate
+         }
+    </style>
+</head>
+
+<body>
+    <div class="don">
+        <h1>hlo</h1>
+        {.don > h1 ,.don  h2 }
+        <h2>hi</h2>
+        {
+            .don >h2 .don h2 .don >h1+h2
+        }
+        <div class="child">
+            <h2>welcome to combinator</h2>
+            {
+                .child h2 .child >h2 .don h2~.child>h2
+            }
+            <div class="child2">
+                <h4>practise</h4>
+                {
+                    .child2 >h4 .child2 h4 .child>h2+.child2>h4
+                }
+            </div>
+        </div>
+    </div>
+</body>
+</html>

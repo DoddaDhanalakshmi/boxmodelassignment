@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            grid-template-areas: 'child1 child2 child3 child4 child4'
+            'child5 child6 child3 child7 child7'
+           ' child8 child6 child9 child7 child7';
+           height:100vh;
+           gap:10px
+        }
+        .parent>img{
+            height:100%;
+            width:600px;
+        }
+        .child1{
+            grid-area:child1;
+        }
+        .child2{
+            grid-area: child2;
+        }
+        .child3{
+            grid-area: child3;
+        }
+        .child4{
+            grid-area: child4;
+
+        }
+        .child5{
+            grid-area: child5;
+        }
+        .child6{
+            grid-area: child6;
+        }
+        .child7{
+            grid-area: child7;
+        }
+        .child8{
+            grid-area:child8;
+        }
+        .child9{
+            grid-area:child9
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <img src="https://thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" alt="" class="child1" width="400px">
+        <img src="http://thewowstyle.com/wp-content/uploads/2015/01/nature-images-6.jpg"class="child2" width="400px"></img>
+        <img src="https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?cs=srgb&dl=cascade-clouds-cool-wallpaper-210186.jpg&fm=jpg" alt="" class="child3" width="200px">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Desktop-hd-3d-nature-images-download.jpg" alt="" class="child4" width="200px">
+        <img src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Free-Amazing-Background-Images-Nature.jpg" alt="" class="child5" width="200px">
+        <img src="https://windows10spotlight.com/wp-content/uploads/2023/01/81a6e74c8adbf7f55406e8c4b80669d5.jpg" alt="" class="child6" width="200px">
+        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?cs=srgb&dl=clouds-cloudy-countryside-236047.jpg&fm=jpg" alt="" class="child7" width="200px">
+        <img src="https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?cs=srgb&dl=daylight-environment-forest-459225.jpg&fm=jpg" alt="" class="child8" width="200px">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.m4FmOjk0Bx-N4JaBzsBoTgHaEP?pid=Api&P=0&h=180" alt="" class="child9" width="200px">
+    </div>
+</body>
+</html>
